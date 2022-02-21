@@ -26,4 +26,5 @@ func IndexHandler2(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/a/", IndexHandler)
 	http.HandleFunc("/aa/", IndexHandler2)
-	http.Li
+	http.ListenAndServe("0.0.0.0:8000", nil)
+}

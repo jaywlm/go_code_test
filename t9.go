@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	req, _ := http.NewRequest("GET", "http://g-api.kwai.com", nil)
+	req, _ := http.NewRequest("GET", "http://www.baidu.com", nil)
 	trace := &httptrace.ClientTrace{
 		GotConn: func(connInfo httptrace.GotConnInfo) {
 			fmt.Printf("Got Conn: %+v\n", connInfo)
